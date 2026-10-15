@@ -1,0 +1,646 @@
+ :root{--navy:#071436;--navy2:#0d2154;--violet:#6c51ef;--violet-light:#ede9ff;--paper:#fbfbff;--surface:#f4f5fb;--ink:#11172c;--muted:#667088;--line:#e1e4ef;--green:#16aa92}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit}.announcement{min-height:42px;padding:9px 4vw;background:#06132f;color:#eafff9;display:flex;gap:14px;justify-content:center;align-items:center;text-align:center;font:500 11px/1.25 "DM Mono",monospace;letter-spacing:.03em}.announcement a,footer a{color:#42e1c5;display:flex;gap:5px;align-items:center;font-weight:700;text-decoration:none;white-space:nowrap}.announcement svg,footer svg{width:13px}.site-header{height:95px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.13);background:var(--navy);position:sticky;top:0;z-index:5}.brand img{display:block;width:205px;height:auto;filter:brightness(1.2) saturate(1.2) drop-shadow(0 0 12px rgba(49,224,189,.26))}.desktop-nav{display:flex;gap:clamp(12px,1.4vw,25px);margin-left:auto;margin-right:clamp(16px,2.6vw,40px)}.desktop-nav a{font-size:11px;font-weight:700;color:#fff;text-decoration:none;white-space:nowrap;transition:color .18s ease,text-shadow .18s ease}.desktop-nav a:hover,.desktop-nav a:focus-visible{color:#42e1c5;text-shadow:0 0 13px rgba(66,225,197,.35);outline:0}.header-action,.primary-button{border:0;border-radius:5px;background:var(--green);color:#fff;font-weight:800;font-size:13px;padding:14px 18px;display:inline-flex;align-items:center;gap:12px;text-decoration:none;box-shadow:0 8px 18px rgba(12,161,137,.22)}.header-action svg,.primary-button svg{width:16px}.header-action:hover,.primary-button:hover{background:#128e7b}.hero{min-height:625px;display:grid;grid-template-columns:1.08fr .92fr;position:relative;overflow:hidden;background:#071436;border-bottom:1px solid rgba(255,255,255,.12)}.hero:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.76;background:radial-gradient(circle at 76% 26%,rgba(45,215,183,.16),transparent 20%),radial-gradient(circle at 57% 89%,rgba(89,105,255,.24),transparent 29%),linear-gradient(118deg,transparent 45%,rgba(54,228,196,.07) 46%,transparent 47%)}.hero:after{content:"";position:absolute;width:62vw;height:62vw;right:-24vw;top:-37vw;border:1px solid rgba(83,234,204,.19);border-radius:50%;box-shadow:0 0 0 52px rgba(83,234,204,.035),0 0 0 104px rgba(83,234,204,.02);animation:hero-pulse 7s ease-in-out infinite;pointer-events:none}.hero-copy,.hero-art{position:relative;z-index:1}.hero-copy{padding:68px 7vw 62px 10vw;align-self:center;color:#fff}.eyebrow{margin:0 0 18px;font:500 11px/1.2 "DM Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--violet);display:flex;gap:9px;align-items:center}.eyebrow span{width:22px;height:2px;background:currentColor;display:block}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(42px,4.15vw,65px);line-height:1.1;letter-spacing:0;margin-bottom:20px;font-weight:800}em{font-style:normal;color:#8e78ff}.hero-copy .eyebrow{color:#42e1c5}.hero-copy h1 em{color:#73efd9;text-shadow:0 0 22px rgba(66,225,197,.18)}.hero-intro{max-width:570px;line-height:1.63;font-size:14px;color:#c7cde1;margin-bottom:26px}.hero-intro strong{color:#fff}.hero-actions{display:flex;gap:22px;align-items:center}.text-button{border:0;padding:0;background:transparent;color:#fff;font-size:13px;font-weight:800;display:flex;gap:8px;align-items:center}.text-button:hover{color:#42e1c5}.text-button svg{width:15px}.hero-art{min-height:625px;overflow:hidden;background:linear-gradient(135deg,rgba(9,36,72,.35),rgba(7,20,54,.08))}.hero-image{position:absolute;top:50%;right:10vw;width:min(72%,500px);height:auto;aspect-ratio:1.08;display:block;object-fit:cover;object-position:center 60%;border-radius:76px 22px 76px 22px;box-shadow:0 22px 52px rgba(0,7,25,.42),0 0 0 1px rgba(127,255,230,.16);transform:translateY(-50%)}.hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,20,54,.44),transparent 48%);pointer-events:none}.hero-note,.art-label{z-index:1}.hero-note{position:absolute;bottom:60px;left:55px;padding:17px 21px;background:#fff;display:flex;gap:12px;align-items:center;box-shadow:8px 8px 0 rgba(0,0,0,.18)}.hero-note p{margin:0;font-size:12px;line-height:1.55;font-weight:800;color:var(--ink)}.note-icon{width:36px;height:36px;display:grid;place-items:center;background:#dcfff7;color:#078d79}.note-icon svg{width:17px}.art-label{position:absolute;right:49px;bottom:35px;margin:0;font:500 10px/1.7 "DM Mono",monospace;letter-spacing:.12em;color:#d5fff5;text-align:right}.art-label span{color:#65e6cf}.trust-strip{display:grid;grid-template-columns:repeat(5,1fr);padding:24px 10vw;background:#fff;border-bottom:1px solid var(--line)}.trust-strip div{padding:4px 22px;border-right:1px solid var(--line);display:grid;gap:3px}.trust-strip div:first-child{padding-left:0}.trust-strip div:last-child{border:0}.trust-strip strong{font-size:12px}.trust-strip span{font:500 11px "DM Mono",monospace;color:#078d79}.section{padding:115px 10vw}.section-heading{display:flex;justify-content:space-between;gap:60px;align-items:end;margin-bottom:50px}.section-heading h2,.approach h2,.contact h2{font-size:clamp(35px,4vw,57px);line-height:1.12;letter-spacing:0;margin:0;font-weight:800}.section-heading>p{max-width:340px;margin:0;color:var(--muted);font-size:14px;line-height:1.75}.program-grid{display:grid;grid-template-columns:1.05fr 1fr 1fr;grid-auto-rows:295px;gap:14px}.program-card{padding:25px;position:relative;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:6px;transition:transform .2s ease,box-shadow .2s ease}.program-card:hover{transform:translateY(-5px);box-shadow:0 16px 30px rgba(19,28,64,.11)}.program-card.featured{grid-row:span 2;background:var(--violet-light);border-color:#dcd5ff}.program-card.dark{background:var(--navy);border-color:var(--navy);color:#fff}.program-card.coral{background:#e8edff;border-color:#d8e0ff}.program-card.light{background:#fff}.program-card.lime{background:#f0edff;border-color:#dfd9ff}.course-number{font:400 11px "DM Mono",monospace;margin-bottom:auto;opacity:.7}.program-card>svg{width:41px;height:41px;margin-bottom:22px;stroke-width:1.5;color:var(--violet)}.program-card.dark>svg{color:#a695ff}.program-card h3{font-size:25px;margin:0 0 8px}.program-card>p:not(.course-number){font-size:13px;line-height:1.65;margin:0;opacity:.8}.program-card span{color:var(--violet);font-weight:800;font-size:12px;margin-top:20px;display:flex;align-items:center;gap:6px}.program-card.dark span{color:#c7bcff}.program-card span svg{width:15px}.approach{background:var(--navy);color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:10vw;align-items:center}.approach-copy .eyebrow{color:#bdb4ff}.approach-copy h2{margin-bottom:28px}.approach-copy>p:not(.eyebrow){line-height:1.8;font-size:15px;color:#c6cee4;max-width:530px}.inline-link{display:inline-flex;gap:10px;align-items:center;color:#b9aaff;font-weight:800;text-decoration:none;font-size:13px;margin-top:16px}.inline-link svg{width:17px}.approach-visual{height:360px;position:relative;background:var(--navy2);overflow:hidden;display:grid;place-items:center}.core-word{width:105px;height:105px;border-radius:50%;background:var(--violet);color:#fff;display:grid;place-items:center;font-size:28px;font-weight:800;z-index:2}.orbit{position:absolute;border:1px solid rgba(210,216,255,.55);border-radius:50%}.orbit-1{width:280px;height:135px;transform:rotate(-25deg)}.orbit-2{width:350px;height:180px;transform:rotate(55deg)}.visual-tag{z-index:3;background:#fff;color:var(--ink);padding:7px 10px;font:500 10px "DM Mono",monospace;position:absolute}.tag-1{top:55px;left:51px}.tag-2{right:36px;top:137px}.tag-3{bottom:45px;left:95px}.modes{background:#f3f4fb}.mode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.mode-grid article{background:#fff;padding:34px 30px;min-height:230px;border:1px solid var(--line);border-top:4px solid var(--violet);border-radius:6px}.mode-grid article:nth-child(2){border-top-color:#5474e8}.mode-grid article:nth-child(3){border-top-color:#9a84ff}.mode-grid svg{width:31px;height:31px;margin-bottom:32px;stroke-width:1.5;color:var(--violet)}.mode-grid h3{font-size:18px;margin-bottom:10px}.mode-grid p{font-size:13px;line-height:1.75;color:var(--muted);margin:0}.contact{padding:100px 10vw;display:grid;grid-template-columns:1.2fr .8fr;gap:80px;background:linear-gradient(112deg,#16aa92,#087666);color:#fff}.contact .eyebrow{color:#d7fff5}.contact h2 em{color:#fff}.contact-details{border-left:1px solid rgba(255,255,255,.36);padding-left:40px;display:flex;flex-direction:column;gap:20px;align-items:flex-start}.contact-details a,.contact-details p{margin:0;color:#fff;font-size:14px;line-height:1.7;text-decoration:none;font-weight:700}.contact-details svg{width:16px;vertical-align:middle;margin-right:5px}.contact .primary-button{background:var(--navy);color:#fff;margin-top:10px}footer{padding:25px 10vw;background:#050e29;color:#bfc9e2;font:400 11px "DM Mono",monospace;display:flex;justify-content:space-between}.modal-backdrop{position:fixed;inset:0;z-index:20;background:rgba(5,14,41,.78);backdrop-filter:blur(6px);display:grid;place-items:center;padding:24px}.modal-backdrop.is-hidden{display:none}.enquiry-card{width:min(1040px,100%);max-height:calc(100vh - 48px);overflow:auto;display:grid;grid-template-columns:.82fr 1.18fr;background:#fff;border-radius:8px;box-shadow:0 22px 65px rgba(5,14,41,.34);position:relative}.close-modal{position:absolute;top:16px;right:16px;width:38px;height:38px;border:0;border-radius:50%;background:rgba(7,20,54,.8);color:#fff;display:grid;place-items:center;z-index:2}.close-modal svg{width:18px}.modal-art{min-height:660px;background:#062462;overflow:hidden}.modal-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}#enquiry-form{padding:45px 48px 34px;display:grid;grid-template-columns:1fr 1fr;gap:14px 17px;align-content:start}#enquiry-form>label{padding:0;margin:0;display:grid;gap:7px;color:var(--ink);font-size:11px;font-weight:800}#enquiry-form input,#enquiry-form select,#enquiry-form textarea{width:100%;border:1px solid #dce0ea;background:#fff;padding:11px 12px;border-radius:5px;color:var(--ink);font-size:12px;outline-color:var(--violet)}#enquiry-form .form-heading,#enquiry-form .full-width,#enquiry-form .submit-button,#enquiry-form .privacy-note{grid-column:span 2}.form-heading{padding-right:40px;margin-bottom:5px}.form-heading h2{font-size:30px;line-height:1.16;margin:0 0 12px;font-weight:800}.form-heading h2 em{display:block;color:var(--violet)}.form-heading p{margin:0;color:var(--muted);font-size:13px;line-height:1.65}.consultation{margin-top:3px;padding-top:18px;border-top:1px solid var(--line)}.consultation h3{margin:0 0 11px;font-size:15px;line-height:1.35;text-transform:uppercase}.consultation h3 svg{width:16px;vertical-align:middle;color:var(--violet)}.consultation label{display:grid;gap:7px;color:var(--ink);font-size:11px;font-weight:800}.consultation textarea{resize:vertical;min-height:64px}.submit-button{justify-content:center;margin-top:2px;background:var(--navy)}.privacy-note{margin:0;display:flex;align-items:center;justify-content:center;gap:6px;color:#78839a;font-size:11px;font-weight:600}.privacy-note svg{width:13px;color:var(--violet)}.enquiry-status{position:absolute;z-index:4;inset:0;display:grid;place-items:center;padding:26px;opacity:0;pointer-events:none}.enquiry-status__panel{width:min(510px,100%);padding:48px 45px 43px;background:#fff;color:var(--ink);text-align:center;border-radius:8px;box-shadow:0 25px 70px rgba(5,14,41,.38);transform:translateY(18px) scale(.95)}.enquiry-status__eyebrow{margin:0 0 19px;font:500 10px/1.2 "DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--violet)}.enquiry-status h2{margin:0 0 18px;font-size:33px;line-height:1.16}.enquiry-status p:not(.enquiry-status__eyebrow){max-width:360px;margin:0 auto;color:var(--muted);font-size:14px;line-height:1.7}.enquiry-status strong{display:block;margin-top:18px;color:var(--ink);font-size:15px;line-height:1.5}.is-showing-status .enquiry-card{pointer-events:none;opacity:.13;transform:scale(.96);filter:blur(3px)}.is-showing-status .enquiry-status{opacity:1;pointer-events:auto}.is-showing-status .enquiry-status__panel{animation:status-arrive .42s cubic-bezier(.22,.8,.3,1) forwards}.is-success .enquiry-status__panel{border-top:5px solid var(--violet)}.is-farewell .enquiry-status__panel{border-top:5px solid #a9afbd}@keyframes status-arrive{to{transform:translateY(0) scale(1)}}@keyframes hero-pulse{0%,100%{transform:scale(1);opacity:.55}50%{transform:scale(1.08);opacity:1}}@media(max-width:1120px){.desktop-nav{gap:13px;margin-right:18px}.desktop-nav a{font-size:10px}.brand img{width:170px}.header-action{padding:13px 14px}}@media(max-width:850px){.desktop-nav{display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:62px 8vw 58px}.hero-art{min-height:380px}.hero-image{top:50%;right:8%;width:min(74%,440px);height:78%;transform:translateY(-50%);border-radius:58px 18px 58px 18px}.trust-strip{padding:20px 8vw;grid-template-columns:1fr 1fr;gap:14px}.trust-strip div:nth-child(2),.trust-strip div:nth-child(4){border-right:0}.trust-strip div:nth-child(3),.trust-strip div:nth-child(5){padding-left:0}.section,.contact{padding:75px 8vw}.program-grid{grid-template-columns:1fr 1fr;grid-auto-rows:260px}.program-card.featured{grid-row:span 1}.approach,.contact{grid-template-columns:1fr;gap:45px}.contact-details{border-left:0;border-top:1px solid rgba(255,255,255,.36);padding:30px 0 0}.enquiry-card{grid-template-columns:1fr;max-width:610px}.modal-art{min-height:230px;max-height:260px}.modal-art img{object-position:center 48%}#enquiry-form{padding:32px 34px}}@media(max-width:540px){.announcement{font-size:9px;line-height:1.45;padding:8px 7vw}.announcement a{display:none}.site-header{height:75px}.brand img{width:150px}.header-action{font-size:0;width:40px;height:40px;padding:0;justify-content:center}.header-action svg{width:17px}.hero-copy{padding:58px 8vw}.hero-copy h1{font-size:39px}.hero-intro{font-size:13px}.hero-actions{flex-wrap:wrap;gap:18px}.hero-art{min-height:310px}.hero-image{right:8%;width:76%;height:78%;border-radius:46px 16px 46px 16px}.hero-note{bottom:24px;left:8%;padding:13px 15px}.hero-note p{font-size:10px}.note-icon{width:31px;height:31px}.art-label{display:none}.trust-strip{grid-template-columns:1fr;gap:0}.trust-strip div,.trust-strip div:nth-child(n){padding:13px 0;border-right:0;border-bottom:1px solid var(--line)}.trust-strip div:last-child{border-bottom:0}.section-heading{display:block;margin-bottom:36px}.section-heading>p{margin-top:18px}.program-grid,.mode-grid{grid-template-columns:1fr}.program-grid{grid-auto-rows:245px}.approach-visual{height:280px}.contact{padding:70px 8vw}.contact h2{font-size:39px}footer{padding:21px 8vw}.enquiry-card{max-height:calc(100vh - 28px)}.modal-backdrop{padding:14px}.modal-art{min-height:185px;max-height:210px}#enquiry-form{padding:27px 25px;grid-template-columns:1fr}#enquiry-form .form-heading,#enquiry-form .full-width,#enquiry-form .submit-button,#enquiry-form .privacy-note{grid-column:span 1}.form-heading{padding-right:24px}.form-heading h2{font-size:27px}.privacy-note{text-align:center;align-items:flex-start}.privacy-note svg{flex:0 0 auto;margin-top:1px}}@media(prefers-reduced-motion:reduce){.hero:after{animation:none}}
+/* Connector-label layout and brush-style arrow overrides */
+body .advantages .advantage-card h3{top:calc(50% - 75px);bottom:auto;left:calc(100% + (var(--gap) / 2));width:calc(var(--gap) + 54px);font-size:12px;line-height:1.35}body .advantages .advantage-card:not(.step-12)::after{top:calc(50% - 7px);height:92px;width:calc(100% + var(--gap) - 18px);background:transparent url("assets/journey-arrow.svg") center/100% 100% no-repeat}body .advantages .advantage-card:not(.step-12)::before{display:none}body .advantages .step-3::after,body .advantages .step-6::after,body .advantages .step-9::after{width:92px;height:102px;left:calc(50% - 46px);top:calc(100% + 8px);background-size:100% 100%;transform:rotate(90deg);transform-origin:center}body .advantages .step-4 h3,body .advantages .step-5 h3,body .advantages .step-10 h3,body .advantages .step-11 h3{left:calc(-1 * (var(--gap) / 2))}body .advantages .step-4::after,body .advantages .step-5::after,body .advantages .step-10::after,body .advantages .step-11::after{right:calc(100% + 8px);left:auto;transform:scaleX(-1);transform-origin:center}body .advantages .step-12 h3{top:calc(100% + 14px);bottom:auto;left:50%;width:calc(100% + 38px);font-size:13px;background:linear-gradient(115deg,#966b10,#ffd86b 23%,#fff5bc 49%,#d09b22 72%,#fff0a4)}@media(max-width:850px){body .advantages .advantage-card h3{font-size:10px}}@media(max-width:540px){body .advantages .advantage-journey{gap:130px}body .advantages .advantage-card h3{top:calc(100% + 12px);left:50%;width:calc(100% + 44px);font-size:13px}body .advantages .advantage-card:not(.step-12)::after{width:76px;height:92px;left:calc(50% - 38px);top:calc(100% + 62px);transform:rotate(90deg);transform-origin:center}body .advantages .step-4::after,body .advantages .step-5::after,body .advantages .step-10::after,body .advantages .step-11::after{left:calc(50% - 38px);right:auto;transform:rotate(90deg)}body .advantages .step-12 h3{top:calc(100% + 14px);left:50%;width:calc(100% + 38px)}}
+body .advantages .step-3 h3,body .advantages .step-6 h3,body .advantages .step-9 h3{left:calc(100% + 22px);top:calc(100% + 8px);width:150px;text-align:left}body .advantages .step-3::after,body .advantages .step-6::after,body .advantages .step-9::after{top:calc(100% + 55px);height:55px}@media(max-width:540px){body .advantages .step-3 h3,body .advantages .step-6 h3,body .advantages .step-9 h3{left:50%;top:calc(100% + 12px);width:calc(100% + 44px);text-align:center}body .advantages .step-3::after,body .advantages .step-6::after,body .advantages .step-9::after{top:calc(100% + 62px);height:92px}}
+/* Straight arrows link cards across a row; row ends loop to the next row. */
+@media (min-width:541px){
+  body .advantages .step-3::after,
+  body .advantages .step-6::after,
+  body .advantages .step-9::after{
+    width:130px;
+    height:calc(var(--tile) + 118px);
+    left:100%;
+    top:calc(50% - 10px);
+    background-image:url("assets/journey-turn-arrow.svg");
+    background-position:left top;
+    background-size:100% 100%;
+    transform:none;
+    transform-origin:left top;
+  }
+  body .advantages .step-6::after{
+    left:0;
+    transform:scaleX(-1);
+  }
+}
+
+/* Certificate showcase follows the Multicore advantage journey. */
+.certificate-feature{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:minmax(0,.93fr) minmax(0,1.07fr);gap:clamp(45px,7vw,120px);align-items:center;padding:clamp(72px,9vw,130px) 10vw;background:#071436;color:#f7f9ff}
+.certificate-feature::before{content:"";position:absolute;z-index:0;width:44vw;height:44vw;right:-17vw;top:-23vw;border:1px solid rgba(226,178,63,.22);border-radius:50%;box-shadow:0 0 0 48px rgba(226,178,63,.035),0 0 0 96px rgba(42,225,197,.025)}
+.certificate-feature::after{content:"";position:absolute;z-index:0;inset:0;pointer-events:none;opacity:.6;background:linear-gradient(125deg,transparent 20%,rgba(34,211,186,.055) 52%,transparent 53%),radial-gradient(circle at 9% 85%,rgba(211,158,39,.12),transparent 23%)}
+.certificate-feature__image{position:relative;z-index:1;padding:10px;border-radius:46px 12px 46px 12px;background:linear-gradient(135deg,#f8dc87,#ab7516 45%,#fff0ac);box-shadow:0 25px 55px rgba(0,0,0,.36),0 0 32px rgba(234,191,70,.15);transform:rotate(-2.2deg)}
+.certificate-feature__image::after{content:"";position:absolute;inset:22px -18px -18px 22px;z-index:-1;border:1px solid rgba(82,236,209,.35);border-radius:42px 12px 42px 12px}
+.certificate-feature__image img{display:block;width:100%;aspect-ratio:1.36;object-fit:cover;object-position:center;border-radius:35px 7px 35px 7px;background:#fff}
+.certificate-feature__copy{position:relative;z-index:1;max-width:660px}
+.certificate-feature__kicker{margin:0 0 18px;color:#f4cb5e;font:600 clamp(21px,2vw,31px)/1.25 Cinzel,serif;letter-spacing:.11em;text-transform:uppercase}
+.certificate-feature__kicker span{color:#e8b742}
+.certificate-feature h2{margin:0 0 20px;color:#f2c653;font:700 clamp(32px,3.5vw,56px)/1.16 Cinzel,serif;letter-spacing:.01em;text-shadow:0 2px 18px rgba(229,177,47,.13)}
+.certificate-feature__lead{margin:0 0 27px;color:#f8fbff;font-size:clamp(17px,1.45vw,22px);font-weight:700;line-height:1.55}
+.certificate-feature__points{margin:0 0 25px;color:#17b978;font:700 clamp(12px,.9vw,15px)/1.8 "DM Mono",monospace;letter-spacing:.03em;text-transform:uppercase;white-space:normal}
+.certificate-feature__points span{color:#17b978;padding:0 .25em}
+.certificate-feature__closing{margin:0;color:#c4cee3;font-size:16px;font-style:italic;line-height:1.7}
+.certificate-feature.is-animation-ready .certificate-feature__image{opacity:0;transform:translateX(-72px) rotate(-6deg)}
+.certificate-feature.is-revealed .certificate-feature__image{opacity:1;transform:translateX(0) rotate(-2.2deg);transition:opacity .55s ease,transform .85s cubic-bezier(.22,.8,.3,1)}
+.certificate-feature.is-animation-ready .certificate-type-word{display:inline-block;max-width:0;overflow:hidden;opacity:0;vertical-align:bottom;white-space:pre;min-width:0}
+.certificate-feature.is-revealed .certificate-type-word{animation:certificate-type var(--typing-duration) steps(var(--typing-characters)) var(--typing-delay) forwards}
+@keyframes certificate-type{to{max-width:calc(var(--word-width) + 2px);opacity:1}}
+@media(max-width:850px){.certificate-feature{grid-template-columns:1fr;gap:54px;padding:78px 9vw}.certificate-feature__image{width:min(620px,100%);justify-self:center}.certificate-feature__copy{text-align:center;justify-self:center}.certificate-feature__points{max-width:540px;margin-left:auto;margin-right:auto}}
+@media(max-width:540px){.certificate-feature{padding:62px 7vw;gap:42px}.certificate-feature__image{padding:6px;border-radius:28px 9px 28px 9px}.certificate-feature__image img{border-radius:22px 5px 22px 5px}.certificate-feature__image::after{inset:14px -10px -10px 14px;border-radius:25px 8px 25px 8px}.certificate-feature__kicker{font-size:17px}.certificate-feature h2{font-size:31px}.certificate-feature__lead{font-size:16px}.certificate-feature__points{font-size:11px;letter-spacing:.01em;white-space:normal}.certificate-feature__closing{font-size:14px}}
+
+/* Final journey flow: row links follow the reading direction and row changes
+   are direct downward arrows.  This intentionally replaces the old U-turns. */
+@media (min-width:541px){
+  body .advantages .advantage-card.step-4::after,
+  body .advantages .advantage-card.step-5::after,
+  body .advantages .advantage-card.step-10::after,
+  body .advantages .advantage-card.step-11::after{
+    left:auto;
+    right:calc(100% + 18px);
+    transform:scaleX(-1);
+    transform-origin:center;
+  }
+
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-6::after,
+  body .advantages .advantage-card.step-9::after{
+    width:54px;
+    height:90px;
+    top:calc(100% + 14px);
+    background:url("assets/journey-down-arrow.svg") center / 100% 100% no-repeat;
+    transform:none;
+  }
+
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-9::after{
+    left:calc(100% + 18px);
+    right:auto;
+  }
+
+  body .advantages .advantage-card.step-6::after{
+    left:auto;
+    right:calc(100% + 18px);
+  }
+
+  /* The closing milestone has a gold, shimmering finish without obscuring
+     the existing photograph. */
+  body .advantages .step-12 .advantage-photo{
+    border-color:#ffe7a0;
+    box-shadow:0 0 0 3px rgba(229,177,47,.32),0 13px 28px rgba(128,84,3,.25),0 0 24px rgba(255,209,84,.42);
+  }
+  body .advantages .step-12 h3{
+    position:absolute;
+    overflow:hidden;
+    isolation:isolate;
+    background:linear-gradient(115deg,#9a6508 0%,#efb82f 24%,#fff4bb 48%,#d69516 70%,#fff0a4 100%);
+    background-size:220% 100%;
+    color:#5d3c00;
+    box-shadow:0 7px 18px rgba(151,105,8,.28),0 0 20px rgba(255,211,93,.34);
+    animation:gold-shimmer 2.8s linear infinite;
+  }
+  body .advantages .step-12 h3::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    background-image:radial-gradient(circle,rgba(255,255,255,.95) 0 1px,transparent 1.6px),radial-gradient(circle,rgba(255,246,185,.9) 0 1px,transparent 1.5px);
+    background-size:24px 24px,31px 31px;
+    background-position:0 0,12px 15px;
+    animation:gold-sparkle 1.8s linear infinite;
+  }
+}
+
+/* Employer logo marquee — two opposing lanes use the supplied logo sheet. */
+.employer-marquee{overflow:hidden;padding:104px 0 100px;background:#e8edff;color:var(--ink)}
+.employer-marquee__heading{max-width:760px;padding:0 10vw;text-align:center;margin:0 auto 47px}.employer-marquee__heading .eyebrow{justify-content:center}.employer-marquee__heading h2{margin:0 0 17px;font-size:clamp(34px,3.7vw,54px);line-height:1.12;font-weight:800}.employer-marquee__heading h2>span,.employer-marquee__heading h2>em{display:block}.employer-marquee__heading h2>span{white-space:nowrap}.employer-marquee__heading>p:last-child{max-width:590px;margin:0 auto;color:var(--muted);font-size:14px;line-height:1.7}
+.logo-lanes{display:grid;gap:17px}.logo-lane{display:flex;width:max-content;will-change:transform}.logo-track{display:flex;align-items:center;gap:26px;flex:none;padding-right:26px}.employer-logo{width:var(--w);height:var(--h,58px);flex:none;display:block;background-image:none;background-repeat:no-repeat;background-size:612px 408px;background-position:calc(-1 * var(--x)) calc(-1 * var(--y));filter:drop-shadow(0 5px 8px rgba(21,35,73,.12));transition:transform .22s ease}.employer-logo:hover{transform:translateY(-4px) scale(1.07)}.logo-lane--right{animation:marquee-right 44s linear infinite}.logo-lane--left{animation:marquee-left 41s linear infinite}@keyframes marquee-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}@keyframes marquee-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}.logo-lane:hover{animation-play-state:paused}
+@media(max-width:540px){.employer-marquee{padding:70px 0}.employer-marquee__heading{padding:0 8vw;margin-bottom:34px}.employer-marquee__heading h2>span{white-space:normal}.employer-marquee__heading>p:last-child{font-size:13px}.logo-lanes{gap:10px}.logo-track{gap:18px;padding-right:18px}.employer-logo{height:52px}}
+@media(prefers-reduced-motion:reduce){.logo-lane--right,.logo-lane--left{animation:none;transform:none}}
+@keyframes gold-sparkle{to{background-position:24px -24px,36px -16px}}
+@media(prefers-reduced-motion:reduce){
+  body .advantages .step-12 h3,
+  body .advantages .step-12 h3::before{animation:none}
+}
+
+/* Career possibilities: centered two-line heading and complete logo grid. */
+.employer-marquee{overflow:visible;padding:104px 6vw 100px}
+.employer-marquee__heading{max-width:900px;padding:0}
+.employer-marquee__heading h2>span,.employer-marquee__heading h2>em{white-space:nowrap}
+.logo-lanes{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:repeat(6,minmax(110px,1fr));gap:28px 26px;align-items:center}
+.logo-lane,.logo-track{display:contents}
+.logo-lane .logo-track:not(:first-child){display:none}
+.employer-logo{justify-self:center;flex:none}
+@media(max-width:850px){.employer-marquee{padding:78px 8vw}.logo-lanes{grid-template-columns:repeat(4,minmax(105px,1fr));gap:24px 18px}}
+@media(max-width:540px){.employer-marquee{padding:70px 7vw}.employer-marquee__heading{padding:0;margin-bottom:34px}.employer-marquee__heading h2>span,.employer-marquee__heading h2>em{white-space:normal}.logo-lanes{grid-template-columns:repeat(2,minmax(100px,1fr));gap:19px 14px}.employer-logo{transform:scale(.9);transform-origin:center}.employer-logo:hover{transform:translateY(-3px) scale(.97)}}
+
+/* Full sprite bounds for every visible mark.  The prior bounds were too tight,
+   which clipped letters at the logo edges (for example, Accenture and Oracle). */
+.logo-lane--right .employer-logo:nth-child(1){--x:8px;--y:14px;--w:51px;--h:62px}.logo-lane--right .employer-logo:nth-child(2){--x:62px;--y:14px;--w:53px;--h:62px}.logo-lane--right .employer-logo:nth-child(3){--x:121px;--y:14px;--w:91px;--h:62px}.logo-lane--right .employer-logo:nth-child(4){--x:218px;--y:14px;--w:93px;--h:62px}.logo-lane--right .employer-logo:nth-child(5){--x:319px;--y:7px;--w:81px;--h:70px}.logo-lane--right .employer-logo:nth-child(6){--x:419px;--y:14px;--w:87px;--h:62px}.logo-lane--right .employer-logo:nth-child(7){--x:509px;--y:14px;--w:103px;--h:62px}.logo-lane--right .employer-logo:nth-child(8){--x:8px;--y:85px;--w:111px;--h:57px}.logo-lane--right .employer-logo:nth-child(9){--x:123px;--y:85px;--w:106px;--h:57px}.logo-lane--right .employer-logo:nth-child(10){--x:234px;--y:85px;--w:70px;--h:57px}.logo-lane--right .employer-logo:nth-child(11){--x:314px;--y:85px;--w:98px;--h:57px}.logo-lane--right .employer-logo:nth-child(12){--x:425px;--y:85px;--w:88px;--h:57px}.logo-lane--right .employer-logo:nth-child(13){--x:535px;--y:85px;--w:77px;--h:57px}.logo-lane--right .employer-logo:nth-child(14){--x:10px;--y:142px;--w:84px;--h:66px}.logo-lane--right .employer-logo:nth-child(15){--x:106px;--y:142px;--w:67px;--h:66px}.logo-lane--right .employer-logo:nth-child(16){--x:181px;--y:142px;--w:80px;--h:66px}
+.logo-lane--left .employer-logo:nth-child(1){--x:517px;--y:140px;--w:95px;--h:68px}.logo-lane--left .employer-logo:nth-child(2){--x:7px;--y:208px;--w:88px;--h:57px}.logo-lane--left .employer-logo:nth-child(3){--x:116px;--y:208px;--w:100px;--h:57px}.logo-lane--left .employer-logo:nth-child(4){--x:258px;--y:208px;--w:102px;--h:57px}.logo-lane--left .employer-logo:nth-child(5){--x:384px;--y:208px;--w:100px;--h:57px}.logo-lane--left .employer-logo:nth-child(6){--x:503px;--y:208px;--w:109px;--h:57px}.logo-lane--left .employer-logo:nth-child(7){--x:8px;--y:265px;--w:83px;--h:62px}.logo-lane--left .employer-logo:nth-child(8){--x:109px;--y:264px;--w:97px;--h:62px}.logo-lane--left .employer-logo:nth-child(9){--x:202px;--y:266px;--w:100px;--h:61px}.logo-lane--left .employer-logo:nth-child(10){--x:324px;--y:268px;--w:85px;--h:59px}.logo-lane--left .employer-logo:nth-child(11){--x:421px;--y:260px;--w:93px;--h:67px}.logo-lane--left .employer-logo:nth-child(12){--x:513px;--y:264px;--w:99px;--h:63px}.logo-lane--left .employer-logo:nth-child(13){--x:10px;--y:330px;--w:86px;--h:72px}.logo-lane--left .employer-logo:nth-child(14){--x:104px;--y:331px;--w:103px;--h:71px}.logo-lane--left .employer-logo:nth-child(15){--x:213px;--y:328px;--w:77px;--h:74px}
+
+/* Career possibilities slideshow: each duplicated track creates a seamless
+   loop.  The upper lane travels right while the lower lane travels left. */
+.employer-marquee{overflow:hidden}
+.logo-lanes{display:grid;grid-template-columns:minmax(0,1fr);max-width:none;margin:0;gap:24px;padding:0}
+.logo-lane,.logo-lane--right,.logo-lane--left{display:flex;width:max-content;will-change:transform}
+.logo-track{display:flex;width:auto;align-items:center;justify-content:flex-start;flex-wrap:nowrap;gap:26px;flex:none;padding-right:26px}
+.logo-lane .logo-track:not(:first-child){display:flex}
+.logo-lane--right{animation:marquee-right 44s linear infinite}
+.logo-lane--left{animation:marquee-left 41s linear infinite}
+.logo-lane:hover{animation-play-state:paused}
+.employer-logo{justify-self:auto}
+@media(max-width:540px){.logo-lanes{gap:14px;padding:0}.logo-track{gap:18px;padding-right:18px}}
+@media(prefers-reduced-motion:reduce){.logo-lane--right,.logo-lane--left{animation:none;transform:none}}
+
+/* Career possibilities: the supplied transparent logo sheets, split into two
+   11-logo marquee lanes. */
+.logo-lanes,.logo-sheet-lanes{display:none}
+.career-logo-lanes{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;overflow:hidden}
+.career-logo-lane{display:flex;width:max-content;will-change:transform}
+.career-logo-track{display:flex;align-items:center;gap:26px;flex:none;padding-right:26px}
+.career-logo{width:153px;height:102px;display:block;flex:none;background-color:transparent;overflow:hidden;transition:transform .22s ease}
+.career-logo--image{object-fit:contain;object-position:center;background-image:none;background-color:transparent;height:102px}
+.career-logo:hover{transform:translateY(-4px) scale(1.06)}
+.logo-tcs,.logo-infosys,.logo-hcl,.logo-wipro,.logo-techmahindra,.logo-accenture,.logo-cognizant,.logo-capgemini,.logo-ibm,.logo-oracle,.logo-microsoft,.logo-intel,.logo-aws{background-image:url("assets/career-logos-row-two.png")}
+.logo-cisco,.logo-dxc{background-image:url("assets/career-logos-row-one.png")}
+.logo-tcs{--logo-x:0;--logo-y:0}.logo-infosys{--logo-x:-153px;--logo-y:0}.logo-hcl{--logo-x:-306px;--logo-y:0}.logo-wipro{--logo-x:-459px;--logo-y:0}
+.logo-techmahindra{--logo-x:0;--logo-y:-102px}.logo-accenture{--logo-x:-153px;--logo-y:-102px}.logo-cognizant{--logo-x:-306px;--logo-y:-102px}.logo-capgemini{--logo-x:-459px;--logo-y:-102px}
+.logo-ibm{--logo-x:0;--logo-y:-204px}.logo-oracle{--logo-x:-153px;--logo-y:-204px}.logo-microsoft{--logo-x:-306px;--logo-y:-204px}
+.logo-intel{--logo-x:0;--logo-y:-306px}.logo-aws{--logo-x:-306px;--logo-y:-306px}
+.logo-cisco,.logo-dxc{height:136px}
+.logo-cisco{--logo-x:-153px;--logo-y:-136px}.logo-dxc{--logo-x:-306px;--logo-y:-136px}
+.career-logo-lane--right{animation:marquee-right 44s linear infinite}
+.career-logo-lane--left{animation:marquee-left 41s linear infinite}
+.career-logo-lane:hover{animation-play-state:paused}
+@media(max-width:540px){.career-logo-lanes{gap:14px}.career-logo-track{gap:18px;padding-right:18px}.career-logo{transform:scale(.86);transform-origin:center}.career-logo:hover{transform:translateY(-3px) scale(.92)}}
+@media(prefers-reduced-motion:reduce){.career-logo-lane--right,.career-logo-lane--left{animation:none;transform:none}}
+
+/* Advantage journey: centred connector captions and scroll-driven progress. */
+@media (min-width:541px){
+  body .advantages .advantage-card{animation:none}
+  body .advantages .advantage-card h3{
+    top:calc(50% - 76px);bottom:auto;left:calc(100% + (var(--gap) / 2));
+    width:var(--gap);transform:translateX(-50%);text-align:center
+  }
+  body .advantages .step-3 h3,
+  body .advantages .step-9 h3{
+    top:calc(50% - 76px);left:calc(100% + 150px);width:170px
+  }
+  body .advantages .step-6 h3{
+    top:calc(50% - 76px);left:-150px;width:170px
+  }
+  body .advantages .step-4 h3,
+  body .advantages .step-5 h3,
+  body .advantages .step-10 h3,
+  body .advantages .step-11 h3{
+    left:calc(-1 * (var(--gap) / 2))
+  }
+  body .advantages .step-12 h3{left:50%;top:calc(100% + 14px);width:calc(100% + 38px)}
+  body .advantages .advantage-card:not(.step-12) h3::after{
+    content:"";position:absolute;top:calc(100% + 18px);left:50%;width:11px;height:11px;
+    border:2px solid #f3f4fb;border-radius:50%;background:var(--navy);
+    box-shadow:0 1px 5px rgba(7,20,54,.22);transform:translateX(-50%);
+    transition:background-color .35s ease .48s,box-shadow .35s ease .48s
+  }
+  body .advantages .advantage-card.is-revealed:not(.step-12) h3::after{
+    background:var(--green);box-shadow:0 0 0 4px rgba(22,170,146,.14)
+  }
+}
+
+.advantage-photo{transform:translateX(-26px) scale(.78);opacity:0;will-change:transform,opacity;transition:transform .62s cubic-bezier(.22,.8,.3,1),opacity .42s ease}
+.step-4 .advantage-photo,.step-5 .advantage-photo,.step-6 .advantage-photo,.step-10 .advantage-photo,.step-11 .advantage-photo,.step-12 .advantage-photo{transform:translateX(26px) scale(.78)}
+.advantage-card.is-revealed .advantage-photo{transform:translateX(0) scale(1);opacity:1}
+@media(max-width:540px){
+  body .advantages .advantage-card h3{top:calc(100% + 12px);left:50%;width:calc(100% + 44px);text-align:center}
+  body .advantages .step-3 h3,body .advantages .step-6 h3,body .advantages .step-9 h3{left:50%;top:calc(100% + 12px);width:calc(100% + 44px)}
+  body .advantages .advantage-card:not(.step-12) h3::after{content:"";position:absolute;top:calc(100% + 18px);left:50%;width:11px;height:11px;border:2px solid #f3f4fb;border-radius:50%;background:var(--navy);transform:translateX(-50%);transition:background-color .35s ease .48s}
+  body .advantages .advantage-card.is-revealed:not(.step-12) h3::after{background:var(--green)}
+}
+@media(prefers-reduced-motion:reduce){.advantage-photo{transform:none!important;opacity:1;transition:none}.advantage-card h3::after{transition:none!important}}
+/* Multicore advantage journey */
+.advantages{background:#f3f4fb;overflow:hidden}.advantages-heading{margin-bottom:64px}.advantage-journey{--tile:210px;--gap:clamp(76px,8vw,155px);display:grid;grid-template-columns:repeat(3,var(--tile));justify-content:space-between;column-gap:var(--gap);row-gap:118px;max-width:1050px;margin:0 auto;padding:8px 0 45px}.advantage-card{position:relative;margin:0;text-align:center;animation:advantage-arrive .65s both;animation-delay:calc(var(--step,1) * 70ms)}.advantage-photo{width:var(--tile);aspect-ratio:1;overflow:hidden;background:#dfe9f1;border:3px solid #fff;box-shadow:0 13px 28px rgba(7,20,54,.16)}.advantage-photo img{display:block;width:400%;height:300%;max-width:none}.advantage-card h3{position:absolute;z-index:2;left:50%;bottom:-57px;width:calc(100% + 38px);transform:translateX(-50%);margin:0;color:var(--green);font-size:13px;line-height:1.38;font-weight:800}.advantage-card:not(.step-12)::after{content:"";position:absolute;z-index:1;background:var(--navy);height:3px;width:calc(100% + var(--gap) - 18px);top:calc(50% + 29px);left:calc(100% + 8px);transform-origin:left center;animation:arrow-draw .75s .4s both}.advantage-card:not(.step-12)::before{content:"";position:absolute;z-index:2;top:calc(50% + 23px);left:calc(100% + var(--gap) - 17px);width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;border-left:13px solid var(--navy);animation:arrow-head .25s 1.1s both}.step-1{grid-area:1/1;--step:1}.step-2{grid-area:1/2;--step:2}.step-3{grid-area:1/3;--step:3}.step-4{grid-area:2/3;--step:4}.step-5{grid-area:2/2;--step:5}.step-6{grid-area:2/1;--step:6}.step-7{grid-area:3/1;--step:7}.step-8{grid-area:3/2;--step:8}.step-9{grid-area:3/3;--step:9}.step-10{grid-area:4/3;--step:10}.step-11{grid-area:4/2;--step:11}.step-12{grid-area:4/1;--step:12}.step-1 .advantage-photo img{transform:translate(0,0)}.step-2 .advantage-photo img{transform:translate(-25%,0)}.step-3 .advantage-photo img{transform:translate(-50%,0)}.step-4 .advantage-photo img{transform:translate(-75%,0)}.step-5 .advantage-photo img{transform:translate(0,-33.333%)}.step-6 .advantage-photo img{transform:translate(-25%,-33.333%)}.step-7 .advantage-photo img{transform:translate(-50%,-33.333%)}.step-8 .advantage-photo img{transform:translate(-75%,-33.333%)}.step-9 .advantage-photo img{transform:translate(0,-66.666%)}.step-10 .advantage-photo img{transform:translate(-25%,-66.666%)}.step-11 .advantage-photo img{transform:translate(-50%,-66.666%)}.step-12 .advantage-photo img{transform:translate(-75%,-66.666%)}.step-3::after,.step-6::after,.step-9::after{width:3px;height:101px;left:50%;top:calc(100% + 8px);transform:none}.step-3::before,.step-6::before,.step-9::before{left:calc(50% - 6px);top:calc(100% + 103px);border-left:8px solid transparent;border-right:8px solid transparent;border-top:13px solid var(--navy);border-bottom:0}.step-4::after,.step-5::after,.step-10::after,.step-11::after{left:auto;right:calc(100% + 8px);transform-origin:right center}.step-4::before,.step-5::before,.step-10::before,.step-11::before{left:auto;right:calc(100% + var(--gap) - 17px);border-left:0;border-right:13px solid var(--navy)}.step-12 h3{bottom:-67px;padding:12px 8px;background:linear-gradient(115deg,#966b10,#ffd86b 23%,#fff5bc 49%,#d09b22 72%,#fff0a4);background-size:220% 100%;color:#5d3c00;text-shadow:0 1px rgba(255,255,255,.65);box-shadow:0 7px 18px rgba(151,105,8,.2);animation:gold-shimmer 2.8s linear infinite}@keyframes advantage-arrive{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}@keyframes arrow-draw{from{scale:0 1}to{scale:1}}@keyframes arrow-head{from{opacity:0}to{opacity:1}}@keyframes gold-shimmer{to{background-position:220% 0}}@media(max-width:850px){.advantage-journey{--tile:165px;--gap:56px;row-gap:105px}.advantage-card h3{font-size:11px}}@media(max-width:540px){.advantages-heading{margin-bottom:45px}.advantage-journey{--tile:min(240px,68vw);display:flex;flex-direction:column;align-items:center;gap:100px;padding-bottom:25px}.advantage-card{width:var(--tile)}.advantage-card h3{font-size:13px}.advantage-card:not(.step-12)::after{width:3px;height:75px;top:calc(100% + 8px);left:calc(50% - 1px);transform:none}.advantage-card:not(.step-12)::before{left:calc(50% - 6px);top:calc(100% + 77px);border-left:8px solid transparent;border-right:8px solid transparent;border-top:13px solid var(--navy);border-bottom:0}.step-12 h3{bottom:-67px}}@media(prefers-reduced-motion:reduce){.advantage-card,.advantage-card:not(.step-12)::after,.advantage-card:not(.step-12)::before,.step-12 h3{animation:none}}
+
+/* Clean connector artwork: straight between cards, U-turns at row ends. */
+@media (min-width:541px){
+  body .advantages .advantage-card:not(.step-12)::after{
+    height:72px;
+    top:calc(50% - 36px);
+    background:transparent url("assets/journey-straight-arrow.svg") center/100% 100% no-repeat;
+  }
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-6::after,
+  body .advantages .advantage-card.step-9::after{
+    width:300px;
+    height:calc(var(--tile) + 118px);
+    top:calc(50% - 10px);
+    left:100%;
+    background-image:url("assets/journey-turn-arrow.svg");
+    transform:none;
+    transform-origin:left top;
+  }
+  body .advantages .advantage-card.step-6::after{
+    left:0;
+    transform:scaleX(-1);
+  }
+}
+
+/* Final journey alignment and reveal state. */
+@media (min-width:541px){
+  body .advantages .advantage-card{animation:none}
+  body .advantages .advantage-card h3{top:calc(50% - 76px);bottom:auto;left:calc(100% + (var(--gap) / 2));width:var(--gap);transform:translateX(-50%);text-align:center}
+  body .advantages .step-3 h3,body .advantages .step-9 h3{left:calc(100% + 150px);width:170px}
+  body .advantages .step-6 h3{left:-150px;width:170px}
+  body .advantages .step-4 h3,body .advantages .step-5 h3,body .advantages .step-10 h3,body .advantages .step-11 h3{left:calc(-1 * (var(--gap) / 2))}
+  body .advantages .step-12 h3{left:50%;top:calc(100% + 14px);width:calc(100% + 38px)}
+  body .advantages .advantage-card:not(.step-12) h3::after{content:"";position:absolute;top:calc(100% + 18px);left:50%;width:11px;height:11px;border:2px solid #f3f4fb;border-radius:50%;background:var(--navy);box-shadow:0 1px 5px rgba(7,20,54,.22);transform:translateX(-50%);transition:background-color .35s ease .48s,box-shadow .35s ease .48s}
+  body .advantages .advantage-card.is-revealed:not(.step-12) h3::after{background:var(--green);box-shadow:0 0 0 4px rgba(22,170,146,.14)}
+}
+body .advantages .advantage-photo{transform:translateX(-26px) scale(.78);opacity:0;will-change:transform,opacity;transition:transform .62s cubic-bezier(.22,.8,.3,1),opacity .42s ease}
+body .advantages .step-4 .advantage-photo,body .advantages .step-5 .advantage-photo,body .advantages .step-6 .advantage-photo,body .advantages .step-10 .advantage-photo,body .advantages .step-11 .advantage-photo,body .advantages .step-12 .advantage-photo{transform:translateX(26px) scale(.78)}
+body .advantages .advantage-card.is-revealed .advantage-photo{transform:translateX(0) scale(1);opacity:1}
+@media(max-width:540px){
+  body .advantages .advantage-card{animation:none}
+  body .advantages .advantage-card h3,body .advantages .step-3 h3,body .advantages .step-6 h3,body .advantages .step-9 h3{top:calc(100% + 12px);left:50%;width:calc(100% + 44px);text-align:center}
+  body .advantages .advantage-card:not(.step-12) h3::after{content:"";position:absolute;top:calc(100% + 18px);left:50%;width:11px;height:11px;border:2px solid #f3f4fb;border-radius:50%;background:var(--navy);transform:translateX(-50%);transition:background-color .35s ease .48s}
+  body .advantages .advantage-card.is-revealed:not(.step-12) h3::after{background:var(--green)}
+}
+@media(prefers-reduced-motion:reduce){body .advantages .advantage-photo{transform:none!important;opacity:1;transition:none}body .advantages .advantage-card h3::after{transition:none!important}}
+
+/* Journey connector refinements: keep every connector in the space between cards. */
+@media (min-width:541px){
+  body .advantages .advantage-card h3{
+    color:var(--navy);
+    transition:color .36s ease;
+  }
+  body .advantages .advantage-card.is-label-active h3{color:var(--green)}
+  body .advantages .advantage-card:not(.step-12)::after{
+    width:calc(100% + var(--gap) - 34px);
+    left:calc(100% + 17px);
+  }
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-6::after,
+  body .advantages .advantage-card.step-9::after{
+    width:242px;
+    left:calc(100% + 17px);
+  }
+  body .advantages .advantage-card.step-6::after{
+    left:auto;
+    right:calc(100% + 17px);
+  }
+  body .advantages .advantage-card h3,
+  body .advantages .step-3 h3,
+  body .advantages .step-6 h3,
+  body .advantages .step-9 h3{
+    transform:translateX(-50%);
+    text-align:center;
+  }
+}
+@media (max-width:540px){
+  body .advantages .advantage-card h3{color:var(--navy);transition:color .36s ease}
+  body .advantages .advantage-card.is-label-active h3{color:var(--green)}
+}
+@media(prefers-reduced-motion:reduce){
+  body .advantages .advantage-card h3{color:var(--green);transition:none}
+}
+body .advantages .advantage-card.is-revealed:not(.step-12) h3::after{
+  background:var(--navy);
+  box-shadow:0 1px 5px rgba(7,20,54,.22);
+}
+body .advantages .advantage-card.is-label-active:not(.step-12) h3::after{
+  background:var(--green);
+  box-shadow:0 0 0 4px rgba(22,170,146,.14);
+}
+@media(prefers-reduced-motion:reduce){
+  body .advantages .advantage-card:not(.step-12) h3::after{background:var(--green)}
+}
+
+/* Desktop journey geometry — this is deliberately kept as the final rule set.
+   Earlier experiments use the same selectors; these values provide one stable
+   coordinate system for cards, captions, straight links and row-end turns. */
+@media (min-width:541px){
+  body .advantages .advantage-journey{
+    --tile:clamp(165px, 11vw, 210px);
+    --gap:clamp(84px, 8vw, 154px);
+    grid-template-columns:repeat(3, var(--tile));
+    column-gap:var(--gap);
+    row-gap:118px;
+    justify-content:center;
+    max-width:none;
+  }
+
+  /* A straight arrow lives entirely in the free space between two cards. */
+  body .advantages .advantage-card:not(.step-12)::after{
+    left:calc(100% + 18px);
+    width:calc(var(--gap) - 36px);
+    height:72px;
+    top:calc(50% - 36px);
+    background:url("assets/journey-straight-arrow.svg") center / 100% 100% no-repeat;
+    transform:none;
+  }
+  body .advantages .advantage-card:not(.step-12)::before{display:none}
+
+  /* The connector starts just outside the final card in a row and its arrow
+     lands level with the centre of the first card in the following row. */
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-6::after,
+  body .advantages .advantage-card.step-9::after{
+    left:calc(100% + 14px);
+    right:auto;
+    width:104px;
+    height:calc(var(--tile) + 131px);
+    top:calc(50% - 6px);
+    background-image:url("assets/journey-turn-arrow.svg");
+    transform:none;
+  }
+  body .advantages .advantage-card.step-6::after{
+    left:auto;
+    right:calc(100% + 14px);
+    transform:scaleX(-1);
+  }
+
+  /* Captions and their status point occupy the midpoint of their connector. */
+  body .advantages .advantage-card h3{
+    top:calc(50% - 76px);
+    bottom:auto;
+    left:calc(100% + (var(--gap) / 2));
+    width:var(--gap);
+    transform:translateX(-50%);
+    text-align:center;
+    color:var(--navy);
+    background:none;
+    box-shadow:none;
+    padding:0;
+  }
+  body .advantages .advantage-card.is-label-active h3{color:var(--green)}
+  body .advantages .step-4 h3,
+  body .advantages .step-5 h3,
+  body .advantages .step-10 h3,
+  body .advantages .step-11 h3{left:calc(-1 * (var(--gap) / 2))}
+  body .advantages .step-3 h3,
+  body .advantages .step-9 h3{left:calc(100% + 52px);width:104px}
+  body .advantages .step-6 h3{left:-52px;width:104px}
+  body .advantages .step-12 h3{
+    top:calc(100% + 14px);
+    left:50%;
+    width:calc(100% + 38px);
+    color:var(--green);
+  }
+}
+
+/* Connector direction and endpoint treatment — kept last to supersede the
+   legacy row-turn experiments above. */
+@media (min-width:541px){
+  /* Row two and row four travel right-to-left. */
+  body .advantages .advantage-card.step-4::after,
+  body .advantages .advantage-card.step-5::after,
+  body .advantages .advantage-card.step-10::after,
+  body .advantages .advantage-card.step-11::after{
+    left:auto;
+    right:calc(100% + 18px);
+    transform:scaleX(-1);
+    transform-origin:center;
+  }
+
+  /* End-of-row transitions are downward arrows, with no bent return path. */
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-6::after,
+  body .advantages .advantage-card.step-9::after{
+    width:54px;
+    height:90px;
+    top:calc(100% + 14px);
+    background:url("assets/journey-down-arrow.svg") center / 100% 100% no-repeat;
+    transform:none;
+  }
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-9::after{
+    left:calc(100% + 18px);
+    right:auto;
+  }
+  body .advantages .advantage-card.step-6::after{
+    left:auto;
+    right:calc(100% + 18px);
+  }
+
+  body .advantages .step-12 .advantage-photo{
+    border-color:#ffe7a0;
+    box-shadow:0 0 0 3px rgba(229,177,47,.32),0 13px 28px rgba(128,84,3,.25),0 0 24px rgba(255,209,84,.42);
+  }
+  body .advantages .step-12 h3{
+    position:absolute;
+    overflow:hidden;
+    isolation:isolate;
+    background:linear-gradient(115deg,#9a6508 0%,#efb82f 24%,#fff4bb 48%,#d69516 70%,#fff0a4 100%);
+    background-size:220% 100%;
+    color:#5d3c00;
+    box-shadow:0 7px 18px rgba(151,105,8,.28),0 0 20px rgba(255,211,93,.34);
+    animation:gold-shimmer 2.8s linear infinite;
+  }
+  body .advantages .step-12 h3::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    background-image:radial-gradient(circle,rgba(255,255,255,.95) 0 1px,transparent 1.6px),radial-gradient(circle,rgba(255,246,185,.9) 0 1px,transparent 1.5px);
+    background-size:24px 24px,31px 31px;
+    background-position:0 0,12px 15px;
+    animation:gold-sparkle 1.8s linear infinite;
+  }
+}
+
+/* Journey connector geometry: a single, shared clearance and a centred label point. */
+@media (min-width:541px){
+  body .advantages .advantage-journey{
+    /* Keep the CSS gap and the visible gap identical; this prevents the artwork
+       from growing into either image when there is extra room in the section. */
+    justify-content:center;
+    column-gap:var(--gap);
+  }
+
+  /* Every straight connector occupies only the gap between its two cards. */
+  body .advantages .advantage-card:not(.step-12)::after{
+    left:calc(100% + 18px);
+    width:calc(var(--gap) - 36px);
+    height:72px;
+    top:calc(50% - 36px);
+    background-image:url("assets/journey-straight-arrow.svg");
+    background-position:center;
+    background-size:100% 100%;
+  }
+
+  /* Row-end connectors stay outside the cards, with the same 18px clearance
+     at both their start and their arrow tip. */
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-6::after,
+  body .advantages .advantage-card.step-9::after{
+    width:132px;
+    height:calc(var(--tile) + 118px);
+    top:calc(50% - 10px);
+    left:calc(100% + 18px);
+    right:auto;
+    background-image:url("assets/journey-turn-arrow.svg");
+    background-position:center;
+    background-size:100% 100%;
+    transform:none;
+  }
+  body .advantages .advantage-card.step-6::after{
+    left:auto;
+    right:calc(100% + 18px);
+    transform:scaleX(-1);
+  }
+
+  /* The caption and its point sit precisely halfway through each connector. */
+  body .advantages .advantage-card h3,
+  body .advantages .step-3 h3,
+  body .advantages .step-6 h3,
+  body .advantages .step-9 h3{
+    top:calc(50% - 76px);
+    width:var(--gap);
+    transform:translateX(-50%);
+    text-align:center;
+  }
+  body .advantages .advantage-card h3{left:calc(100% + (var(--gap) / 2));}
+  body .advantages .step-4 h3,
+  body .advantages .step-5 h3,
+  body .advantages .step-10 h3,
+  body .advantages .step-11 h3{left:calc(-1 * (var(--gap) / 2));}
+  body .advantages .step-3 h3,
+  body .advantages .step-9 h3{left:calc(100% + 66px);width:132px;}
+  body .advantages .step-6 h3{left:-66px;width:132px;}
+}
+
+/* Three-up desktop journey: compact row turns connect image centre to image centre. */
+@media (min-width:541px){
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-6::after,
+  body .advantages .advantage-card.step-9::after{
+    width:100px;
+    height:calc(var(--tile) + 131px);
+    top:calc(50% - 6px);
+    left:calc(100% + 12px);
+    right:auto;
+    background-image:url("assets/journey-turn-arrow.svg");
+    transform:none;
+  }
+  body .advantages .advantage-card.step-6::after{
+    left:auto;
+    right:calc(100% + 12px);
+    transform:scaleX(-1);
+  }
+  body .advantages .step-3 h3,
+  body .advantages .step-9 h3{left:calc(100% + 50px);width:100px}
+  body .advantages .step-6 h3{left:-50px;width:100px}
+}
+
+/* Authoritative desktop journey layout. This must remain last: older journey
+   experiments above use the same selectors. */
+@media (min-width:541px){
+  body .advantages .advantage-journey{
+    --tile:clamp(165px, 11vw, 210px);
+    --gap:clamp(84px, 8vw, 154px);
+    grid-template-columns:repeat(3, var(--tile));
+    column-gap:var(--gap);
+    row-gap:118px;
+    justify-content:center;
+    max-width:none;
+  }
+  body .advantages .advantage-card:not(.step-12)::after{
+    left:calc(100% + 18px);
+    right:auto;
+    width:calc(var(--gap) - 36px);
+    height:72px;
+    top:calc(50% - 36px);
+    background:url("assets/journey-straight-arrow.svg") center / 100% 100% no-repeat;
+    transform:none;
+  }
+  body .advantages .advantage-card:not(.step-12)::before{display:none}
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-6::after,
+  body .advantages .advantage-card.step-9::after{
+    left:calc(100% + 14px);
+    right:auto;
+    width:104px;
+    height:calc(var(--tile) + 131px);
+    top:calc(50% - 6px);
+    background-image:url("assets/journey-turn-arrow.svg");
+    transform:none;
+  }
+  body .advantages .advantage-card.step-6::after{
+    left:auto;
+    right:calc(100% + 14px);
+    transform:scaleX(-1);
+  }
+  body .advantages .advantage-card h3{
+    top:calc(50% - 76px);
+    bottom:auto;
+    left:calc(100% + (var(--gap) / 2));
+    width:var(--gap);
+    transform:translateX(-50%);
+    text-align:center;
+    color:var(--navy);
+    background:none;
+    box-shadow:none;
+    padding:0;
+  }
+  body .advantages .advantage-card.is-label-active h3{color:var(--green)}
+  body .advantages .step-4 h3,
+  body .advantages .step-5 h3,
+  body .advantages .step-10 h3,
+  body .advantages .step-11 h3{left:calc(-1 * (var(--gap) / 2))}
+  body .advantages .step-3 h3,
+  body .advantages .step-9 h3{left:calc(100% + 52px);width:104px}
+  body .advantages .step-6 h3{left:-52px;width:104px}
+  body .advantages .step-12 h3{
+    top:calc(100% + 14px);
+    left:50%;
+    width:calc(100% + 38px);
+    color:var(--green);
+  }
+}
+
+/* Replace row-end U-turns with downward arrows and preserve snake direction. */
+@media (min-width:541px){
+  body .advantages .advantage-card.step-4::after,
+  body .advantages .advantage-card.step-5::after,
+  body .advantages .advantage-card.step-10::after,
+  body .advantages .advantage-card.step-11::after{
+    left:auto;
+    right:calc(100% + 18px);
+    transform:scaleX(-1);
+    transform-origin:center;
+  }
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-6::after,
+  body .advantages .advantage-card.step-9::after{
+    width:54px;
+    height:90px;
+    top:calc(100% + 14px);
+    background:url("assets/journey-down-arrow.svg") center / 100% 100% no-repeat;
+    transform:none;
+  }
+  body .advantages .advantage-card.step-3::after,
+  body .advantages .advantage-card.step-9::after{left:calc(100% + 18px);right:auto}
+  body .advantages .advantage-card.step-6::after{left:auto;right:calc(100% + 18px)}
+
+  body .advantages .step-12 .advantage-photo{
+    border-color:#ffe7a0;
+    box-shadow:0 0 0 3px rgba(229,177,47,.32),0 13px 28px rgba(128,84,3,.25),0 0 24px rgba(255,209,84,.42);
+  }
+  body .advantages .step-12 h3{
+    position:absolute;
+    overflow:hidden;
+    isolation:isolate;
+    background:linear-gradient(115deg,#9a6508 0%,#efb82f 24%,#fff4bb 48%,#d69516 70%,#fff0a4 100%);
+    background-size:220% 100%;
+    color:#5d3c00;
+    box-shadow:0 7px 18px rgba(151,105,8,.28),0 0 20px rgba(255,211,93,.34);
+    animation:gold-shimmer 2.8s linear infinite;
+  }
+  body .advantages .step-12 h3::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    background-image:radial-gradient(circle,rgba(255,255,255,.95) 0 1px,transparent 1.6px),radial-gradient(circle,rgba(255,246,185,.9) 0 1px,transparent 1.5px);
+    background-size:24px 24px,31px 31px;
+    background-position:0 0,12px 15px;
+    animation:gold-sparkle 1.8s linear infinite;
+  }
+}

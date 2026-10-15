@@ -1,0 +1,53 @@
+/* Site-wide content-protection deterrents. Form controls stay usable. */
+html, body {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+input, textarea, select, option {
+  -webkit-user-select: text;
+  user-select: text;
+  -webkit-touch-callout: default;
+}
+
+img, video, canvas {
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.capture-shield {
+  position: fixed;
+  z-index: 2147483647;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  background: #061436;
+  color: #fff;
+  font: 700 15px/1.4 Arial, sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  transition: opacity .1s ease, visibility 0s linear .1s;
+}
+
+.capture-shield::after {
+  content: 'Protected content';
+  padding: 18px 22px;
+  border: 1px solid rgba(255,255,255,.42);
+  border-radius: 6px;
+}
+
+.capture-shield--active {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+@media print {
+  body > * { display: none !important; }
+}
